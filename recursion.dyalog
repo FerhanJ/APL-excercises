@@ -1,7 +1,7 @@
 :Namespace recursion
 ⍝ 2.2 and 2.3 - PEANO ADDITION/MULTIPLICATION
-succ ← {⍵ + 1} ⍝ define succession function
-pre ← {⍵ - 1} ⍝ define precession function
+succ ← {⍵ + 1} ⍝ define successor function
+pre ← {⍵ - 1} ⍝ define predecessor function
 
 padd ← {⍺=0:⍵ ⋄ (pre ⍺) ∇ succ ⍵}  ⍝ exc 2.2  
 ptimes ← {⍺=0:0 ⋄ ⍵ padd (pre ⍺) ∇ ⍵} ⍝ exc 2.3
